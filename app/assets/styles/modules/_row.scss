@@ -1,0 +1,10 @@
+.row{
+    @include clearfix;
+    
+    @media #{$tablet} {
+        &__3-column-at-tablet {
+            float: left;
+            width: 33.33%;
+        }
+    }
+}

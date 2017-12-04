@@ -1,0 +1,1 @@
+img{max-width:100%;height:auto}*{box-sizing:border-box}.wrapper{padding:0 40px;max-width:1200px}.row::after{content:"";clear:both;display:table}@media (min-width: 640px){.row__3-column-at-tablet{float:left;width:33.33%}}
