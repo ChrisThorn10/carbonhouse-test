@@ -1,0 +1,57 @@
+.main-menu {
+    background-color: black;
+    @include oswald;
+    height: 70px;
+    padding-top: 10px;
+    
+    @media #{$tablet} {
+        padding-top: 15px;
+        height: 90px;
+    }
+    
+    &__logo {
+        width: 100px;
+        min-width: 100px;
+        max-width: 200px;
+
+        
+        @media #{$tablet} {
+            position: relative;
+            bottom: 35px;
+            width: 23%;
+            min-width: 150px;
+            max-width: 200px; 
+            margin-top: 5px;
+        }
+    }
+    
+    & ul {
+        
+        display: none;
+        
+        @media #{$tablet} {
+            list-style: none;
+            position: absolute;
+            width: 70%;
+            display: inline-flex;
+            justify-content: space-between;
+            padding:0;
+            float: right;
+            position: relative;
+            right: 0;
+            
+        }
+        
+    }
+    
+    & ul li {
+        display: inline-block; 
+    }
+    
+    & ul li a{
+        text-decoration: none;
+        color: white;
+    
+        
+    }
+}
