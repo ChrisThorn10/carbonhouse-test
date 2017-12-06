@@ -1,0 +1,8 @@
+.header{
+    
+    &__section-header {
+        @include oswald;
+        font-size: 1.5625rem;
+        letter-spacing: .2rem;
+    }
+}

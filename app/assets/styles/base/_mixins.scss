@@ -1,23 +1,23 @@
-@mixin atSmall{
-	@media (min-width:530px){
-	}	
+
+@mixin oswald {
+    /*font mixin found in _mixins.scss*/
+    font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: .1rem;
 }
 
-@mixin atMedium{
-	@media (min-width:800px){
-		
-	}	
+@mixin merriweather {
+    /*font mixin found in _mixins.scss*/
+    font-family: 'Merriweather', serif; 
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 100;
+    
 }
 
-@mixin atLarge{
-	@media (min-width:1010px){
-		
-	}	
-}
-
-@mixin clearfix{
-    &::after{
-        content:"";
+@mixin clearfix {
+    &::after {
+        content: "";
         clear: both;
         display: table;
     }

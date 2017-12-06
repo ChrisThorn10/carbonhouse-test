@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <title>CH Venue</title>
     <meta name="keywords" content="web design, front-end developer, developer, graphic design, design">
     <meta name="description" content="My name is Christie Thornton and I am a web designer.">
@@ -34,92 +34,131 @@
         </nav> 
     </header>
     
-    <div id="upcoming-events" class="wrapper">
-        <h2>Upcoming Events</h2>
-        <p class="upcoming-events__icons"><span>Grid Icon</span><span>List Icon</span></p>
-        <hr>
-        <div class="row">
-            <div class="upcoming-events__item row__3-column-at-tablet">
-                <img src="assets/images/upcomint-event-img.png" alt="Nikki Minaj">
-                <div id="upcoming-events__details">
-                    <h5>
-                      <span class="upcoming-events__date">July 25, 2015</span>
-                      <span class="upcoming-events__day">Friday</span>
-                    </h5>
-                    <h3>Nikki Minaj</h3> 
-                    <h4>The Pink Print Tour</h4> 
-                </div>  
-           </div>
+    <div id="upcoming-events-section" class="upcoming-events bg-color__gray">
+        <div class="wrapper">
+             <h2 class="header__section-header">Upcoming Events</h2>
+             <div class="upcoming-events__icons">
+                <div class="upcoming-events__icons-wrapper">
+                    <span class="upcoming-events__grid-view"><img src="assets/images/grid-icon.png" alt="Grid view of Upcoming Events"></span>
+                    <span class="upcoming-events__list-view"><img src="assets/images/list-icon.png" alt="Grid view of Upcoming Events"></span>   
+                </div>
+                
+            </div>
+            <hr>
+            <div class="row row__gutters">
+                <div class="upcoming-events__item  row__3-column-at-desktop">
+                    <img src="assets/images/nikki-minaj.png" alt="Nikki Minaj">
+                    <div class="upcoming-events__date-time">
+                            <h5>
+                                <span class="upcoming-events__date">July 25, 2015</span>
+                                <span class="upcoming-events__day">Friday</span>
+                            </h5>    
+                    </div>
+                    <div class="upcoming-events__details">
+                        <div class="upcoming-events__performer-tour">
+                            <h3>Nikki Minaj</h3> 
+                            <h4>The Pink Print Tour</h4>    
+                        </div> 
+                    </div> 
+                    <div class="upcoming-events__buy-tix"><p>Buy Tickets</p></div> 
+               </div>
 
-           <div class="upcoming-events__item  row__3-column-at-tablet">
-                <img src="assets/images/upcomint-event-img.png" alt="Nikki Minaj">
-                <div id="upcoming-events__details">
-                    <h5>
-                      <span class="upcoming-events__date">July 25, 2015</span>
-                      <span class="upcoming-events__day">Friday</span>
-                    </h5>
-                    <h3>Nikki Minaj</h3> 
-                    <h4>The Pink Print Tour</h4> 
-                </div>  
-           </div>
+               <div class="upcoming-events__item  row__3-column-at-desktop">
+                    <img src="assets/images/nick.png" alt="Nick Jonas">
+                    <div class="upcoming-events__date-time">
+                        <h5>
+                            <span class="upcoming-events__date">July 30, 2015</span>
+                            <span class="upcoming-events__day">Saturday</span>
+                        </h5>    
+                    </div>
+                    <div class="upcoming-events__details">
+                        <div class="upcoming-events__performer-tour">      
+                            <h3>Nick Jonas</h3> 
+                            <h4>'Live in Concert' Tour</h4>
+                        </div> 
+                    </div>
+                    <div class="upcoming-events__buy-tix"><p>Buy Tickets</p></div>  
+               </div>
 
-           <div class="upcoming-events__item  row__3-column-at-tablet">
-                <img src="assets/images/upcomint-event-img.png" alt="Nikki Minaj">
-                <div id="upcoming-events__details">
-                    <h5>
-                      <span class="upcoming-events__date">July 25, 2015</span>
-                      <span class="upcoming-events__day">Friday</span>
-                    </h5>
-                    <h3>Nikki Minaj</h3> 
-                    <h4>The Pink Print Tour</h4> 
-                </div>  
-           </div>
+               <div class="upcoming-events__item  row__3-column-at-desktop">
+                    <img src="assets/images/taylor-swift.png" alt="Taylor Swift">
+                    <div class="upcoming-events__date-time">
+                        <h5>
+                            <span class="upcoming-events__date">August 06, 2015</span>
+                            <span class="upcoming-events__day">Thursday</span>
+                        </h5>    
+                    </div>
+                    <div class="upcoming-events__details">
+                        <div class="upcoming-events__performer-tour">      
+                            <h3>Taylor Swift</h3> 
+                            <h4>The 1989 World Tour</h4> 
+                        </div>    
+                    </div> 
+                    <div class="upcoming-events__buy-tix"><p>Buy Tickets</p></div> 
+               </div>
 
-           <div class="upcoming-events__item  row__3-column-at-tablet">
-                <img src="assets/images/upcomint-event-img.png" alt="Nikki Minaj">
-                <div id="upcoming-events__details">
-                    <h5>
-                      <span class="upcoming-events__date">July 25, 2015</span>
-                      <span class="upcoming-events__day">Friday</span>
-                    </h5>
-                    <h3>Nikki Minaj</h3> 
-                    <h4>The Pink Print Tour</h4> 
-                </div>  
-           </div>
+               <div class="upcoming-events__item  row__3-column-at-desktop">
+                    <img src="assets/images/sam-smith.png" alt="Sam Smith">
+                    <div class="upcoming-events__date-time">
+                        <h5>
+                            <span class="upcoming-events__date">August 15, 2015</span>
+                            <span class="upcoming-events__day">Saturday</span>
+                        </h5>    
+                    </div>
+                    <div class="upcoming-events__details">
+                        <div class="upcoming-events__performer-tour">   
+                            <h3>Sam Smith</h3> 
+                            <h4>In the Lonely Hour Tour</h4> 
+                        </div>
+                   </div>
+                   <div class="upcoming-events__buy-tix"><p>Buy Tickets</p></div>  
+               </div>
 
-           <div class="upcoming-events__item  row__3-column-at-tablet">
-                <img src="assets/images/upcomint-event-img.png" alt="Nikki Minaj">
-                <div id="upcoming-events__details">
-                    <h5>
-                      <span class="upcoming-events__date">July 25, 2015</span>
-                      <span class="upcoming-events__day">Friday</span>
-                    </h5>
-                    <h3>Nikki Minaj</h3> 
-                    <h4>The Pink Print Tour</h4> 
-                </div>  
-           </div>
+               <div class="upcoming-events__item  row__3-column-at-desktop">
+                    <img src="assets/images/iggy.png" alt="Iggy Azalea">
+                    <div class="upcoming-events__date-time">
+                        <h5>
+                            <span class="upcoming-events__date">July 25, 2015</span>
+                            <span class="upcoming-events__day">Friday</span>
+                        </h5>    
+                    </div>
+                    <div class="upcoming-events__details">
+                        <div class="upcoming-events__performer-tour">
+                            <h3>Iggy Azalea</h3> 
+                            <h4>'Great Escape' Tour</h4> 
+                        </div> 
+                   </div>
+                   <div class="upcoming-events__buy-tix"><p>Buy Tickets</p></div> 
+               </div>
 
-           <div class="upcoming-events__item  row__3-column-at-tablet">
-                <img src="assets/images/upcomint-event-img.png" alt="Nikki Minaj">
-                <div id="upcoming-events__details">
-                    <h5>
-                      <span class="upcoming-events__date">July 25, 2015</span>
-                      <span class="upcoming-events__day">Friday</span>
-                    </h5>
-                    <h3>Nikki Minaj</h3> 
-                    <h4>The Pink Print Tour</h4> 
-                </div>  
-           </div>
-       </div>
-       
-      
-    </div>
+               <div class="upcoming-events__item  row__3-column-at-desktop">
+                    <img src="assets/images/brandon-flowers.png" alt="Brandon Flowers">
+                    <div class="upcoming-events__date-time">
+                        <h5>
+                            <span class="upcoming-events__date">August 30, 2015</span>
+                            <span class="upcoming-events__day">Saturday</span>
+                        </h5>    
+                    </div>
+                    <div class="upcoming-events__details">
+                        <div class="upcoming-events__performer-tour">   
+                            <h3>Brandon Flowers</h3> 
+                            <h4>with Temper Trap</h4> 
+                        </div>
+                   </div>
+                   <div class="upcoming-events__buy-tix"><p>Buy Tickets</p></div>      
+               </div>
+                  
+            </div> <!-- end row, row-gutters div -->
+        </div> <!-- end wrapper div -->
+    </div> <!-- end upcoming events -->
     
-    <div id="newsletter">
-        <div id="newsletter__dark-background">
-            <h2>Newsletter Signup</h2>
-            <h3>Stay updated on the best concerts and most hip events.</h3>
-            <a href="#" class="button__white-outline">Get Connected</a>
+    <div id="newsletter-section" class="newsletter">
+        <div class="wrapper">
+            <div class="newsletter__dark-background">
+                <h2>Newsletter Signup</h2>
+                <h3>Stay updated on the best concerts and most hip events.</h3>
+                <a href="#" class="button button__white-outline">Get Connected</a>    
+            </div>   
         </div>    
     </div>
     

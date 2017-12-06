@@ -2,7 +2,22 @@
     @include clearfix;
     
     @media #{$tablet} {
-        &__3-column-at-tablet {
+        &__3-column-at-desktop {
+            float: left;
+            width: 50%;
+        }
+        
+        &__gutters {
+            margin-right: -15px;
+        }
+        
+        &__gutters > div{
+            padding-right:15px;    
+        }
+    }
+    
+    @media #{$desktop} {
+        &__3-column-at-desktop {
             float: left;
             width: 33.33%;
         }

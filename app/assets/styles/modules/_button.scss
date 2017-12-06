@@ -1,0 +1,7 @@
+.button{
+    border: solid 3px white;
+    color: white;
+    @include oswald;
+    text-decoration: none;
+    padding: 5px;
+}

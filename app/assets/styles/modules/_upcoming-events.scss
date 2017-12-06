@@ -1,0 +1,176 @@
+$left-right-padding:20px;
+
+.upcoming-events {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    @media #{$tablet} {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    
+    & > div > h2 {
+        @media #{$tablet} {
+            display: inline;
+        }
+    }
+    &__icons{
+        @include clearfix;
+        display: none;
+        
+        @media #{$tablet} {
+            display:inline;
+            margin-top:100px;
+        }
+    }
+    
+    &__icons-wrapper{
+        width: 100px;
+        float: right;
+    }
+    
+    &__grid-view{
+        background-color: white;
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        padding: 10px;
+
+    }
+    
+    &__list-view{
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        padding: 10px;
+
+
+    }
+    
+     &__grid-view img,
+     &__list-view img
+    
+    {
+        width: 25px;
+        height: 25px;
+
+    }
+    
+    &__item {
+        margin-bottom: 15px;
+        overflow: hidden; 
+        position:relative;
+    }
+    
+    &__item img {
+        display: block;
+        width: 40%;
+        border: solid white 10px;
+        
+        @media #{$tablet} {
+            width: 100%; 
+            border: none;
+        }
+    }
+    
+    &__date-time { 
+        @include oswald;
+        background-color: black;
+        color: $fuchsia;
+        font-size: 1.2rem;
+        position: relative;
+        z-index: 5;
+        
+    }
+    
+    &__date-time > h5 {
+        margin: 0; 
+        padding: 10px 0 10px $left-right-padding;
+    }
+
+    &__day {
+        float: right;
+        background-color: #333;
+        padding-right: $left-right-padding;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        position: relative;
+        z-index: 10;
+        bottom: 15px;
+    }
+    
+    &__details {
+        background-color: white;
+        padding-bottom: 20px;
+        
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 64%;
+        
+        
+        @media #{$tablet} {
+            position: static;
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    &__details h3 {
+        
+        @include oswald;
+        text-align: left;
+        /*font-size: 1.5625rem;*/
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $fuchsia;
+        margin-bottom: .1em;
+        margin-top: 0px;
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        
+        @media #{$phone-larger} {
+            font-size: 1.8rem;
+        }
+        
+        @media #{$tablet} {
+            text-align: center;
+            padding-top: 0;
+            font-size: 1.5625rem;
+        }
+    }
+    
+    &__details h4 {
+        @include merriweather;
+        font-size: .8rem;
+        margin-top: 0;
+        text-align: left;
+        
+        @media #{$phone-larger} {
+            font-size: 1rem;
+        }
+        
+        @media #{$tablet} {
+            text-align: center;
+        }
+    }
+    
+    &__buy-tix {
+        background-color: $fuchsia;
+        width: 100%;
+        text-align:center;
+        @include oswald;
+        color: white;
+        padding: 1px;
+        margin-bottom: 15px;
+        
+        @media #{$tablet} {
+            display:none;
+        }
+    }
+}
