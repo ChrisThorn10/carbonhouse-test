@@ -64,14 +64,27 @@ $left-right-padding:20px;
         position:relative;
     }
     
-    &__item img {
+    &__image{
+        overflow: hidden;
+    }
+    
+    &__image img {
         display: block;
         width: 40%;
         border: solid white 10px;
+        transition: all .8s ease-in-out;
         
         @media #{$tablet} {
             width: 100%; 
             border: none;
+        }
+    }
+    
+    &__image img:hover{
+        @media #{$tablet} {
+            transform: scale(1.05);
+            filter: opacity(.6);
+            filter: brightness(.6);
         }
     }
     

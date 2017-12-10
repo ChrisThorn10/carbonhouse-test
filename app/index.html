@@ -6,30 +6,42 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <title>CH Venue</title>
     <meta name="keywords" content="web design, front-end developer, developer, graphic design, design">
-    <meta name="description" content="My name is Christie Thornton and I am a web designer.">
+    <meta name="description" content="We have the best concerts and most hip events.">
     <link rel="stylesheet" href="compiled-assets/styles/styles.css">
     <script src="https://use.fontawesome.com/0bdc06e1e0.js"></script>
+    <script src="assets/scripts/noframework.waypoints.min.js"></script>
+    <script src="assets/scripts/jquery.min.js"></script>
 </head>
 <body> 
     <header> 
         <div id="social-header-section" class="social-header">
-            <ul>
-                <li class="social-header__text">Get Connected</li>
-                <li class="social-header__icon">
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li class="social-header__icon">
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li class="social-header__icon">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li class="social-header__icon">
-                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                </li>
-                <li>Search Events</li>
-                <li>Login</li>
-            </ul>
+            <div class="wrapper">
+                <ul>
+                    <li class="social-header__text">Get Connected</li>
+                    <li class="social-header__icon">
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-header__icon">
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-header__icon">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-header__icon">
+                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="social-header__form">
+                        <form><input class="social-header__search" type="search" placeholder="Search Events"><i class="fa fa-search" aria-hidden="true"></i></form>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="login">
+            <div class="wrapper">
+                Login <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
         </div>
    
         <nav>
@@ -61,7 +73,9 @@
             <hr>
             <div class="row row__gutters">
                 <div class="upcoming-events__item  row__3-column-at-desktop">
-                    <img src="assets/images/nikki-minaj.png" alt="Nikki Minaj">
+                    <div class="upcoming-events__image">
+                        <img src="assets/images/nikki-minaj.png" alt="Nikki Minaj">
+                    </div>
                     <div class="upcoming-events__date-time">
                             <h5>
                                 <span class="upcoming-events__date">July 25, 2015</span>
@@ -78,7 +92,9 @@
                </div>
 
                <div class="upcoming-events__item  row__3-column-at-desktop">
-                    <img src="assets/images/nick.png" alt="Nick Jonas">
+                    <div class="upcoming-events__image">
+                        <img src="assets/images/nick.png" alt="Nick Jonas">
+                    </div>
                     <div class="upcoming-events__date-time">
                         <h5>
                             <span class="upcoming-events__date">July 30, 2015</span>
@@ -95,7 +111,9 @@
                </div>
 
                <div class="upcoming-events__item  row__3-column-at-desktop">
-                    <img src="assets/images/taylor-swift.png" alt="Taylor Swift">
+                    <div class="upcoming-events__image">
+                        <img src="assets/images/taylor-swift.png" alt="Taylor Swift">
+                    </div>    
                     <div class="upcoming-events__date-time">
                         <h5>
                             <span class="upcoming-events__date">August 06, 2015</span>
@@ -112,7 +130,9 @@
                </div>
 
                <div class="upcoming-events__item  row__3-column-at-desktop">
-                    <img src="assets/images/sam-smith.png" alt="Sam Smith">
+                    <div class="upcoming-events__image">
+                        <img src="assets/images/sam-smith.png" alt="Sam Smith">
+                   </div>    
                     <div class="upcoming-events__date-time">
                         <h5>
                             <span class="upcoming-events__date">August 15, 2015</span>
@@ -129,7 +149,9 @@
                </div>
 
                <div class="upcoming-events__item  row__3-column-at-desktop">
-                    <img src="assets/images/iggy.png" alt="Iggy Azalea">
+                    <div class="upcoming-events__image">
+                        <img src="assets/images/iggy.png" alt="Iggy Azalea">
+                    </div>
                     <div class="upcoming-events__date-time">
                         <h5>
                             <span class="upcoming-events__date">July 25, 2015</span>
@@ -146,7 +168,9 @@
                </div>
 
                <div class="upcoming-events__item  row__3-column-at-desktop">
-                    <img src="assets/images/brandon-flowers.png" alt="Brandon Flowers">
+                    <div class="upcoming-events__image">
+                        <img src="assets/images/brandon-flowers.png" alt="Brandon Flowers">
+                    </div>
                     <div class="upcoming-events__date-time">
                         <h5>
                             <span class="upcoming-events__date">August 30, 2015</span>
@@ -196,7 +220,7 @@
         </p>
         
     </div>
-    <script src="assets/scripts/App.js"></script>   
+    <script src="assets/scripts/App.js"></script>  
 
 </body>
 </html>

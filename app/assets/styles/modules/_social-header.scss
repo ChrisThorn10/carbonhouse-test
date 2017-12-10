@@ -4,15 +4,14 @@
     display: none;
     @include oswald;
     
-    
     @media #{$tablet} {
-        display: inline;
-        height: 30px;
+        display: inline-block;
+        height: 40px;
+        padding: 5px 0px;
+        width: 83%;
+        text-align: right;
     }
     
-    &__text{
-        color: $fuchsia;
-    }
     
     &__icon {
         margin-left: 10px;
@@ -22,14 +21,56 @@
     & ul {
         list-style: none;
         margin: 0;
+        padding: 0;
     }
     
-    & ul li {
+    & ul li.social-header__icon,
+    & ul li.social-header__text{
         display: inline-block; 
+    }
+    
+    &__text{
+        color: $fuchsia;
+    }
+    
+    & ul li.social-header__form {
+        display: none; 
     }
     
     & ul li a {
         text-decoration: none;
         color: black;
     }
+    
+    &__form {
+        margin-left: 50px;
+        text-align: left;
+        width: 300px;
+    }
+    
+    &__search {
+        width: 275px;
+        height: 30px;
+        background-color: #ccc;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+    
+    &__form > form > i {
+        position: relative;
+        left: -25px;
+        color: #333;
+    }
+    
+    & input::placeholder {
+        @include oswald;
+    }
+    
+    @media #{$desktop}{
+        & ul li.social-header__form {
+            display: inline-block; 
+        }
+    }
 }
+

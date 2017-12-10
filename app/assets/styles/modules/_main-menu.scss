@@ -50,8 +50,12 @@
     
     & ul li a{
         text-decoration: none;
-        color: white;
-    
-        
+        color: white; 
+        transition: all .25s ease-in;
     }
+    
+    & ul li a:hover{
+        color: $fuchsia;
+    }
+    
 }

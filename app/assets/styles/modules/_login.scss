@@ -1,0 +1,38 @@
+.login {
+    display: none;
+    
+    @media #{$tablet} {
+        display:inline;
+        width: 17%;
+        /*background-color: $fuchsia;*/
+        color: white;
+        font-size: .8rem;
+        float: right;
+        height: 40px;
+        @include oswald;
+        padding-top: 10px;
+        cursor: pointer;
+        
+        background: linear-gradient(to left, $fuchsia 20%, #666);
+        background-size: 350% 100%;
+        background-position:right bottom;
+        
+        transition: all .8s linear;
+
+        & i {
+            border-radius: 50%;
+            border: 1px solid white;
+            padding: 3px;
+        }
+    }
+}
+
+.login:hover {
+    
+    @media #{$tablet} {
+        background-position:left bottom;
+        /*border-bottom: solid 3px $fuchsia;*/
+    }
+    
+    
+}
