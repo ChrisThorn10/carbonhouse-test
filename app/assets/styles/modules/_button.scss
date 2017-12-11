@@ -4,4 +4,11 @@
     @include oswald;
     text-decoration: none;
     padding: 5px;
+    cursor: pointer;
+    transition: all .7s ease-out;
+    
+    &:hover{
+        background-color: white;
+        color: black;
+    }
 }

@@ -1,3 +1,9 @@
+// ----------------------------------------------------------
+// using waypoints library to reveal the newsletter signup 
+// block when you scroll to that section
+// 
+// ----------------------------------------------------------
+
 RevealOnScroll($(".newsletter__dark-background"), "55%");
 
 

@@ -176,14 +176,23 @@ $left-right-padding:20px;
     &__buy-tix {
         background-color: $fuchsia;
         width: 100%;
-        text-align:center;
+        text-align: center;
         @include oswald;
         color: white;
         padding: 1px;
         margin-bottom: 15px;
         
+        
         @media #{$tablet} {
-            display:none;
+            display: none;
         }
+    }
+    
+    &__buy-tix p::before {
+        content: url(../../assets/images/ticket.png);
+        background-repeat: no-repeat;
+        margin-right: 10px;
+        position: relative;
+        top: 2px;
     }
 }

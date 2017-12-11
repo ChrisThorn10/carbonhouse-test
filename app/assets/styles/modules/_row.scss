@@ -14,6 +14,11 @@
         &__gutters > div{
             padding-right:15px;    
         }
+        
+        &__2-column-at-desktop {
+            float: left;
+            width: 50%;
+        }
     }
     
     @media #{$desktop} {

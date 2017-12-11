@@ -1,0 +1,99 @@
+.get-social-directions {
+    
+    margin-bottom: 60px;
+    
+    & h2, & h3{
+        margin-bottom: 0px;    
+    }
+    
+    &__black-bar {
+        background-color: black;
+        @include oswald;
+        color: white;
+        text-align: center;
+    }
+    
+    &__black-bar-tabs {
+        @include oswald;
+        color: white;
+        text-align: center;
+    }
+    
+    &__black-bar p {
+        padding: 8px;
+        margin-bottom: 0px;
+    }
+    
+    &__social-menu {
+        padding:0;
+    }
+    
+    &__social-menu-item{
+        display: inline-block;
+        width: 32%;
+        height: auto;
+        padding: 8px;
+        text-align: center;
+        cursor: pointer;
+        background-color: black;
+        vertical-align: top;
+    }
+    
+    &__social-menu-item span{
+        display: none;
+    }
+    
+    &__social-menu-item:nth-child(1),
+    &__social-menu-item:nth-child(2){
+        padding-right: 2px;
+    }
+    
+    &__feed {
+        height:330px;
+        background-image: url('../../assets/images/twitter-tab-feed.png');
+        background-position: center; 
+    }
+    
+    &__map {
+        height:330px;
+        background-image: url('../../assets/images/map-small.png');
+        background-size:cover;
+        border: 10px solid #efefef;
+        
+    }
+    
+    &__active-tab{
+        background: linear-gradient(to top right, $fuchsia 50%, #d345e9 50%);
+        position: relative;
+        
+    }
+    
+    @media #{$phone-larger} {
+        &__map {
+            background-image: url('../../assets/images/map.png');
+        }
+    }
+    
+     @media #{$tablet} {
+        &__black-bar,
+        &__black-bar-tabs,
+        &__social-menu-item {
+            height:60px;
+            margin-bottom:20px;
+        }
+         
+        & h2, & h3{
+            display:block;
+        }
+         
+        &__social-menu-item span{
+            display: inline;
+        } 
+         
+        &__social-menu-item span::before{
+            content:"\a";
+            white-space: pre;
+        }  
+    }
+    
+}

@@ -3,6 +3,23 @@
     &__section-header {
         @include oswald;
         font-size: 1.5625rem;
-        letter-spacing: .2rem;
+        letter-spacing: .18rem;
+    }
+    
+    &__display-inline-block {
+        display: inline-block;
+    }
+    
+    &__pink-italics {
+        @include merriweather;
+        color: $fuchsia;
+        margin-top: 0px;
+    }
+    
+    &__lowercase {
+        @include oswald;
+        text-transform: none;
+        letter-spacing: normal;
+        font-weight: 100;
     }
 }

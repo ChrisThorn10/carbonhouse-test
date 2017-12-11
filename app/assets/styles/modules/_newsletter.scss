@@ -1,5 +1,5 @@
 .newsletter {
-    background-image: url("../../assets/images/newsletter-background-1480-796.png");
+    background-image: url("../../assets/images/newsletter-background-640-540.png");
     background-size: cover; 
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -7,7 +7,8 @@
     
     @media #{$tablet} {
         padding-top: 8rem;
-        padding-bottom: 8rem;    
+        padding-bottom: 8rem; 
+        background-image: url("../../assets/images/newsletter-background-1480-796.png")
     }
     
     &__dark-background {
@@ -38,12 +39,6 @@
         @media #{$tablet} {
              line-height: auto;   
         }
-    }
-    
-    & h3{
-        @include merriweather;
-        color: $fuchsia;
-        margin-top: 0px;
     }
     
     & .button {
